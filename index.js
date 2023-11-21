@@ -1,7 +1,7 @@
 const express = require("express");
 const dotenv = require('dotenv');
 const mongoose = require("mongoose");
-const routes = require('./routes')
+const routes = require('routes')
 const bodyParser = require('body-parser')
 dotenv.config()
 
@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 
 routes(app);
 
-mongoose.connect(`${process.env.MONGO_DB}`)
+mongoose.connect(`${process.env.MONGODB_URL}`)
     .then(() => {
         console.log('Connect Db success!')
     })
