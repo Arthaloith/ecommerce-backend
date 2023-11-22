@@ -21,8 +21,8 @@ const sendEmailCreateOrder = async (email, orderItems) => {
     listItem += `
       <div>
         <div>
-          <p>Bạn đã đặt sản phẩm <b>${order.name}</b> với số lượng: <b>${order.amount}</b> và giá là: <b>${order.price} VND</b></p>
-          <p>Bên dưới là hình ảnh của sản phẩm:</p>
+          <p>You have ordered <b>${order.name}</b> with quantity of: <b>${order.amount}</b> and price is: <b>${order.price} VND</b></p>
+          <p>Below is a picture of your order::</p>
         </div>
       </div>
       <div style="margin-bottom: 20px;">
